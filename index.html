@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      /***************************header start**********************************/
+      header {
+        height: 100px;
+        width: 100%;
+        background-color: whitesmoke;
+        position: relative;
+      }
+      .logo {
+        height: 100px;
+        width: 300px;
+        position: absolute;
+        left: 2%;
+        line-height: 100px;
+      }
+      nav {
+        height: 100px;
+        width: 70%;
+        position: absolute;
+        right: 2%;
+      }
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+        margin-right: 100px;
+      }
+      nav ul li {
+        display: inline;
+        line-height: 100px;
+        margin-left: 30px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+        letter-spacing: 1px;
+      }
+      nav ul li a:hover {
+        color: greenyellow;
+      }
+      /**************************banner satrt***********************************/
+      .banner {
+        height: 90vh;
+        width: 100%;
+        background-color: whitesmoke;
+        display: flex;
+      }
+      .text_contianer {
+        height: 100%;
+        width: 50%;
+        padding: 8% 0% 0% 4%;
+      }
+      #big_text {
+        font-size: 60px;
+        color: green;
+      }
+      .text_contianer p {
+        font-size: 25px;
+        padding: 5% 15% 3% 0%;
+        line-height: 1.7;
+      }
+      #srch {
+        height: 60px;
+        width: 50%;
+        padding-left: 5%;
+      }
+      #srchbtn {
+        height: 60px;
+        width: 30%;
+      }
+      .text_contianer button {
+        padding: 2% 3%;
+      }
+      .image_container {
+        height: 100%;
+        width: 50%;
+        padding: 8% 2%;
+      }
+      /**********************about start*******************************/
+      .center_conatiner {
+        height: 70vh;
+        width: 95%;
+        margin: auto;
+        background-color: whitesmoke;
+        margin-top: 100px;
+        display: flex;
+        box-shadow: 3px 3px 5px 6px #ccc;
+      }
+      .text_about {
+        height: 100%;
+        width: 50%;
+        text-align: right;
+        padding-right: 2%;
+        overflow: hidden;
+      }
+      .text_about h1 {
+        font-size: 40px;
+        padding-top: 8%;
+      }
+      .text_about button {
+        padding: 2% 3%;
+      }
+      .text_about p {
+        padding: 5% 0% 5% 20%;
+        font-size: 22px;
+        line-height: 1.5;
+      }
+      .text_about .image_about {
+        height: 100%;
+        width: 50%;
+      }
+      /*****************************fresh start here***************************/
+      .main_conatiner_center {
+        height: 120vh;
+        width: 70%;
+        margin: auto;
+        background-color: whitesmoke;
+        margin-top: 100px;
+        position: relative;
+        text-align: center;
+      }
+      .text_fresh {
+        height: 70%;
+        width: 50%;
+        background-color: yellow;
+        position: absolute;
+        left: 0px;
+        padding: 5%;
+        text-align: left;
+      }
+      #hello_text {
+        padding: 4%;
+      }
+      .text_fresh h1 {
+        padding: 3% 5% 5% 0%;
+      }
+      .text_fresh p {
+        line-height: 2;
+      }
+      .image_fresh {
+        height: 60%;
+        width: 50%;
+        position: absolute;
+        right: 0px;
+      }
+      .upper_div_fresh {
+        height: 50%;
+        width: 60%;
+        position: absolute;
+        bottom: 0px;
+      }
+      .number_div_one {
+        position: absolute;
+        padding: 2%;
+        border-radius: 50%;
+        background-color: yellowgreen;
+        right: -50px;
+        top: 40%;
+      }
+      .number_div_two {
+        position: absolute;
+        padding: 2%;
+        border-radius: 50%;
+        background-color: yellowgreen;
+        bottom: 200px;
+        left: 57%;
+      }
+      /*************************************testimonial start*****************/
+      .medium_contaainer {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        margin-top: 100px;
+      }
+      #hellooooo_text {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+      }
+      .background_wallpaper_show {
+        height: 90%;
+        width: 100%;
+        background-color: tomato;
+        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+        padding-top: 11.5%;
+        margin-top: 100px;
+      }
+      .conntainer {
+        padding: 1%;
+        width: 50%;
+        margin: auto;
+        background-color: whitesmoke;
+        display: flex;
+      }
+      .image_testimonial {
+        height: 100%;
+        width: 30%;
+        padding-top: 5%;
+      }
+      .text_testimonial {
+        height: 100%;
+        width: 70%;
+        padding: 4%;
+      }
+      .text_testimonial h1 {
+        font-size: 30px;
+      }
+      .text_testimonial p {
+        line-height: 1.6;
+        font-size: 22px;
+        padding-top: 3%;
+      }
+      /**************************contact start*****************************/
+      .center_div_container {
+        height: 80vh;
+        text-align: center;
+      }
+      .mid_container {
+        height: 60vh;
+        width: 60%;
+        margin: auto;
+        background-color: yellowgreen;
+        display: flex;
+      }
+
+      .left_div_conatiner_form {
+        height: 100%;
+        padding-top: 3%;
+        width: 50%;
+      }
+      #mmtext {
+        padding: 3%;
+        font-size: 50px;
+      }
+      .mainm {
+        height: 50px;
+        width: 80%;
+        margin-top: 20px;
+        padding-left: 5%;
+        border-radius: 3px;
+      }
+      #mainmm {
+        height: 200px;
+        width: 80%;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 2%;
+      }
+      #subbtn {
+        padding: 2% 3%;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .right_div_container_map {
+        height: 100%;
+        width: 50%;
+      }
+      /***********************footer start*******************************/
+      .footer_medium_container {
+        height: 40vh;
+        width: 100%;
+        background-color: darkgrey;
+        display: flex;
+        margin-top: 50px;
+      }
+      .box {
+        height: 100%;
+        width: 33.66%;
+        padding: 4%;
+      }
+      .box p {
+        padding: 3% 1%;
+      }
+      .box ul {
+        list-style-type: none;
+        margin-top: 20px;
+      }
+      .box ul li {
+        margin-top: 10px;
+      }
+      .box ul li a {
+        text-decoration: none;
+        line-height: 2;
+        font-size: 22px;
+      }
+      #serchhello {
+        height: 45px;
+        width: 70%;
+        padding-left: 2%;
+        border-radius: 4px;
+      }
+      #serchbtnnnnn {
+        padding: 2% 3%;
+      }
+      .mainfooter {
+        height: 60px;
+        width: 100%;
+        background-color: black;
+        color: whitesmoke;
+        text-align: center;
+        line-height: 60px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!---------------------headrt start-->
+    <header>
+      <div class="logo"><h1>Shree</h1></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Vegetable</a></li>
+          <li><a href="#">Testomonial</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li>
+            <a href="#"><i class="fas fa-th-list"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-------------------------banner start-->
+    <div class="banner">
+      <div class="text_contianer">
+        <h1>Welcome To Shree</h1>
+        <h1 id="big_text">Vegetables Shop</h1>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal
+        </p>
+        <form action="" method="POST">
+          <p>
+            <input
+              type="search"
+              name="srch"
+              placeholder="Vegetable"
+              id="srch"
+            />&nbsp;<input type="submit" id="srchbtn" value="Search" />
+          </p>
+        </form>
+        <button>Contact Us</button>&nbsp;
+        <button>Vegetable</button>
+      </div>
+      <div class="image_container">
+        <img src="images/img2.png" height="100%" width="80%" alt="" />
+      </div>
+    </div>
+    <!----------------------------about satrt-->
+    <div class="center_conatiner">
+      <div class="text_about">
+        <h1>ABOUT US</h1>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages andIt is
+          a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many
+        </p>
+        <button>Read More</button>
+      </div>
+      <div class="image_about">
+        <img src="images/about.jpg" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <!----------------------fresh vegetable start------------------------>
+    <div class="main_conatiner_center">
+      <h1 id="hello_text">FRESH VEGETABLE</h1>
+      <div class="text_fresh">
+        <h1>Best Vegetables Shop</h1>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages andIt is
+          a long established fact that a reader will be distracted
+        </p>
+      </div>
+      <div class="image_fresh">
+        <img src="images/v1.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="number_div_one"><h1>01</h1></div>
+      <div class="upper_div_fresh">
+        <img src="images/v2.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="number_div_two"><h1>02</h1></div>
+    </div>
+    <!----------------------------testimonial start-->
+    <div class="medium_contaainer">
+      <h1 id="hellooooo_text">TESTIMONIAL</h1>
+      <div class="background_wallpaper_show">
+        <div class="conntainer">
+          <div class="image_testimonial">
+            <img src="images/tes.jpg" height="60%" width="100%" alt="" />
+          </div>
+          <div class="text_testimonial">
+            <h1>Jomono</h1>
+            <p>review</p>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------------------------contact start-->
+    <div class="center_div_container">
+      <h1 id="mmtext">CONTACT US</h1>
+      <div class="mid_container">
+        <div class="left_div_conatiner_form">
+          <form action="" method="POST">
+            <p>
+              <input
+                type="text"
+                name="fname"
+                placeholder="Enter Your Name"
+                class="mainm"
+              />
+            </p>
+            <p>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                class="mainm"
+              />
+            </p>
+            <p>
+              <input
+                type="tel"
+                name="mobile"
+                placeholder="Enter Your Mobile Numenr"
+                class="mainm"
+              />
+            </p>
+            <p>
+              <textarea
+                name="msg"
+                placeholder="Message"
+                id="mainmm"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </p>
+            <p><input type="submit" value="Submit" id="subbtn" /></p>
+          </form>
+        </div>
+        <div class="right_div_container_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635689.793072721!2d80.8833819!3d27.141237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e3!4m0!4m0!5e0!3m2!1sen!2sin!4v1617706419118!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------------------footer start-->
+    <div class="footer_medium_container">
+      <div class="box">
+        <h1>Shree</h1>
+        <br />
+        <h1>Address</h1>
+        <p>It is a long established fact that a reader will be</p>
+        <p>(+71 1234567890)</p>
+        <p>demo@gmail.com</p>
+      </div>
+      <div class="box">
+        <h1>Social Link</h1>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Linkdin</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h1>Newsletter</h1>
+        <form action="" method="POST">
+          <p>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              id="serchhello"
+            />
+          </p>
+          <p><input type="submit" value="Subscribe" id="serchbtnnnnn" /></p>
+        </form>
+      </div>
+    </div>
+    <div class="mainfooter">
+      <h3>Copyright © 2019 Design by Free Html Templates</h3>
+    </div>
+  </body>
+</html>
